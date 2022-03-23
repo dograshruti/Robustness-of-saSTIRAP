@@ -32,6 +32,29 @@ figure
     caxis([0 1])
     colorbar;
 
+
+    %%
+    % saSTIRAP p2 map as a function of 
+    % STIRAP area A (obtained from var1) and
+    % saSTIRAP area A_02 (obtained from var2)
+    % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    load('Exp_saSTIRAP_area_map.mat')
+
+    var1 = amplitude_02_range.^2;
+    var2 = amplitude_01_range;
+    title1 = 'Amplitude 02';
+    title2 = 'Amplitude 01 (V)';
+    
+    figure
+    surf(var2,var1,squeeze(state(:,:,1,3))); shading flat; view([90 -90]);
+    xlabel(title2);
+    ylabel(title1);
+    xlim([var2(1), var2(end)]);
+    ylim([var1(1), var1(end)]);
+    zlim([0,1])
+    caxis([0 1])
+    colormap('hot')
+    colorbar;
   
 
 
