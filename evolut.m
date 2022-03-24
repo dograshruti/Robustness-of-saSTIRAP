@@ -33,19 +33,10 @@ phi01t = phi01 + (dynamic_phase)*4/sqrt(2)*hb*Thetat;
 phi12t = phi12 - (dynamic_phase)*5/sqrt(2)*hb*Thetat;
 phi20t = phi20 + (dynamic_phase)*hb/sqrt(2)*Thetat;
 phi2pht = 1*(-(phi20t+pi)/2 + phi_kk);
-%phi2pht = -1*(-pi/4 + (dynamic_phase)*hb/sqrt(2)/2*Thetat)+ phi_kk;
-%phi2pht = -(phi20t+pi)/2; %+pi/4;
+%phi2pht = -(phi20t+pi)/2; 
 
 H01=hb/2*[0, omega01t*exp(i*phi01t),0; omega01t*exp(-i*phi01t),0,0; 0,0,0];
 H12=hb/2*[0,0,0; 0,0,omega12t*exp(i*phi12t); 0,omega12t*exp(-i*phi12t),0];
-% H02=hb/2*[0,omega2pht*exp(i*(phi-det*t1)),0;...
-%    omega2pht*exp(-i*(phi-det*t1)),0,sqrt(2)*omega2pht*exp(i*(phi+det*t1));...
-%    0,sqrt(2)*omega2pht*exp(-i*(phi+det*t1)),0];
-
-% H02=hb/2*[0,1*omega2pht*exp(i*(phi-det*t1)),0;...
-%    1*omega2pht*exp(-i*(phi-det*t1)),0,sqrt(2)*omega2pht*exp(i*(phi+det*t1));...
-%    0,sqrt(2)*omega2pht*exp(-i*(phi+det*t1)),0];
-
 H02=hb/2*[0,1*omega2pht*exp(i*(phi2pht-det*t1)),0;...
    1*omega2pht*exp(-i*(phi2pht-det*t1)),0*det,sqrt(2)*omega2pht*exp(i*(phi2pht+det*t1));...
    0,sqrt(2)*omega2pht*exp(-i*(phi2pht+det*t1)),0*det];
