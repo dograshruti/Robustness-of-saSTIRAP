@@ -1,0 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data (.mat files) and matlab codes (.m files) based on
+%"Experimental demonstration of robustness under scaling errors for 
+% superadiabatic population transfer in a superconducting circuit, 
+% Shruti Dogra, Antti Vepsäläinen, and Gheorghe Sorin Paraoanu".
+% To cite, see- https://doi.org/10.48550/arXiv.2203.12073
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Main_STIRAP_and_saSTIRAP.m 
+Main matlab code for STIRAP and saSTIRAP evolutions
+with detailed comments. There are several flags to 
+be chosen appropriately.
+
+
+plot_exp1.m
+To plot the experimental data used in the figures.
+Detailed comments and .mat files to be loaded are mentioned. 
+
+Extra:
+sigma_k_plot_simulation.m 
+Simulates p2 map as function of sigma and kappa. 
+
+area_plot_simulation.m 
+Simulates p2 map as function of STIRAP and saSTIRAP areas. 
+
+
