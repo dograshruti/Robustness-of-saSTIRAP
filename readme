@@ -3,7 +3,9 @@
 %"Experimental demonstration of robustness under scaling errors for 
 % superadiabatic population transfer in a superconducting circuit, 
 % Shruti Dogra, Antti Vepsäläinen, and Gheorghe Sorin Paraoanu".
-% To cite, see- https://doi.org/10.48550/arXiv.2203.12073
+% Accepted for publication in 'Phil. Trans. of the Royal Soc. A'
+% To cite, see- https://dx.doi.org/10.1098/rsta.2021.0274
+% Link to arXiv- https://doi.org/10.48550/arXiv.2203.12073
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Main_STIRAP_and_saSTIRAP.m 
